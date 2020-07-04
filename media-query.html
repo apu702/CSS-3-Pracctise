@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-query</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .food{
+            border: 3px solid lightgrey;
+            border-radius: 30px;
+            margin: 10px;
+            width: 350px;
+        }
+
+        .food img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 760px) {
+            .container{
+                flex-direction: column;
+            }
+            .container .food{
+                background-color: red;
+
+            }
+
+            .container p{
+                color: white;
+                margin-left: 10px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container .food{
+                background-color: limegreen;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+             <p> Labore lorem magna kasd et takimata no. Sadipscing amet et nonumy lorem sadipscing vero no kasd ut. No ipsum ut.Rebum eos dolores amet dolor amet dolor sanctus, at eos dolores et invidunt gubergren erat dolores. Voluptua elitr gubergren kasd.</p>
+        </div>
+
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+             <p> Labore lorem magna kasd et takimata no. Sadipscing amet et nonumy lorem sadipscing vero no kasd ut. No ipsum ut.Rebum eos dolores amet dolor amet dolor sanctus, at eos dolores et invidunt gubergren erat dolores. Voluptua elitr gubergren kasd.</p>
+        </div>
+
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+             <p> Labore lorem magna kasd et takimata no. Sadipscing amet et nonumy lorem sadipscing vero no kasd ut. No ipsum ut.Rebum eos dolores amet dolor amet dolor sanctus, at eos dolores et invidunt gubergren erat dolores. Voluptua elitr gubergren kasd.</p>
+        </div>
+
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+             <p> Labore lorem magna kasd et takimata no. Sadipscing amet et nonumy lorem sadipscing vero no kasd ut. No ipsum ut.Rebum eos dolores amet dolor amet dolor sanctus, at eos dolores et invidunt gubergren erat dolores. Voluptua elitr gubergren kasd.</p>
+        </div>
+
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+             <p> Labore lorem magna kasd et takimata no. Sadipscing amet et nonumy lorem sadipscing vero no kasd ut. No ipsum ut.Rebum eos dolores amet dolor amet dolor sanctus, at eos dolores et invidunt gubergren erat dolores. Voluptua elitr gubergren kasd.</p>
+        </div>
+
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+             <p> Labore lorem magna kasd et takimata no. Sadipscing amet et nonumy lorem sadipscing vero no kasd ut. No ipsum ut.Rebum eos dolores amet dolor amet dolor sanctus, at eos dolores et invidunt gubergren erat dolores. Voluptua elitr gubergren kasd.</p>
+        </div>
+    </div>
+</body>
+</html>
